@@ -1,0 +1,48 @@
+{# src/EK/OjaadBundle/Resources/views/Home/message_ok.html.twig #}
+{# Template fof Bundle #}
+
+{% extends "EKOjaadBundle::layout_large.html.twig" %}
+
+{% block body %}
+
+    <!-- Article main content -->
+    <article class="col-xs-12 maincontent">
+
+        <header class="page-header">
+            <h1 class="page-title">{{ 'status.op.title'|trans }}</h1>
+        </header>
+
+        <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <h3 class="thin text-center">{{ status }}</h3>
+                    <hr>
+                    <p>
+                        {% if tag == 1 %}
+                            <b>
+                                {% for message in app.flashes('success') %}
+                                    <div class="alert alert-success">
+                                        {{ message }}
+                                    </div>
+                                {% endfor %}
+                            </b>
+                        {% endif %}
+
+                        {% if tag == 0 %}
+                            <b>
+                                {% for message in app.flashes('warning') %}
+                                    <div class="alert alert-danger">
+                                        {{ message }}
+                                    </div>
+                                {% endfor %}
+                            </b>
+                        {% endif %}
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </article>
+    <!-- /Article -->
+{% endblock %}

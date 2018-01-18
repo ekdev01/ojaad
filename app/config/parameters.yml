@@ -1,0 +1,22 @@
+# This file is auto-generated during the composer install
+parameters:
+    database_host: localhost
+    database_port: 3306
+    database_name: ojaad
+    database_user: ojaad
+    database_password: afkunite0j@ad
+    # Swiftmailer parameters
+    mailer_transport: smtp
+    mailer_host: smtp1.dc0.gpaas.net
+    mailer_user: ~
+    mailer_password: ~
+    mailer_port: 25
+    secret: 11904c806ba38c7b859386b50d0ed5d0a32683b9
+    mail_to: contact@ojaad.org
+    mail_from: contact@ojaad.org 
+    mail_from_pwd: Oj@@d001#
+    host_mail: mail.gandi.net
+    port_mail: 465
+
+    # Google recaptcha
+    google_recaptcha_secret: 6LcaQT0UAAAAAGwr1a5g3byjg_5OJDKt-daKc5rH

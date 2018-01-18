@@ -1,0 +1,62 @@
+{# src/EK/OjaadBundle/Resources/views/Home/contact.html.twig #}
+{# Template fof Bundle #}
+
+{% extends "EKOjaadBundle::layout_contact.html.twig" %}
+
+{% block body %}
+    <article class="col-sm-9 maincontent">
+        <header class="page-header">
+            <h1 class="page-title">{{ 'form.contact.title'|trans }}</h1>
+        </header>
+
+        <p>{{ 'form.contact.msg'|trans }}</p>
+        <br>
+
+        {{ form_start(form) }}
+            <div class="row">
+                <div class="col-sm-4">
+                    {{ form_widget(form.name) }}
+                    {{ form_errors(form.name) }}
+                </div>
+                <div class="col-sm-4">
+                    {{ form_widget(form.email) }}
+                    {{ form_errors(form.email) }}
+                </div>
+                <div class="col-sm-4">
+                    {{ form_widget(form.phone) }}
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-12">
+                    {{ form_widget(form.subject) }}
+                    {{ form_errors(form.subject) }}
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-12">
+                    {{ form_widget(form.body, { 'attr': {'rows': '9'} }) }}
+                    {{ form_errors(form.body) }}
+                </div>
+            </div>
+            <br>
+            {# Render CSRF token etc .#}
+            <div class="row" style="display:none">
+                {{ form_rest(form) }}
+            </div>
+            <br>
+            <div class="row" style="align-content: center;">
+                <div class="col-sm-12 text-center">
+                    <div class="g-recaptcha" data-sitekey="6LcaQT0UAAAAAGTQwl21SicdsjbLGxdjKFIbCrKH"></div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-12 text-right">
+                    <input class="btn btn-action" type="submit" value="{{ 'form.contact.submit'|trans }}">
+                </div>
+            </div>
+        {{ form_end(form) }}
+    </article>
+{% endblock %}

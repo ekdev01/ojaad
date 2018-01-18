@@ -1,0 +1,226 @@
+#
+site.title: Organización Jurídica de los Africanos y Afrodescendientes
+site.sigle: OJAAD
+#
+mymenu.home: Página principal
+mymenu.job: Únete a nosotros
+mymenu.lang: Cambiar idioma
+mymenu.cont: Contacto
+mymenu.part: Individual
+mymenu.entr: Empresa
+mymenu.adhesion: Solicitud de información
+mymenu.admin: ESPACIO RESERVADO
+mymenu.don: HACER UNA DONACIÓN
+mymenu.adm: Espacio reservado
+mymenu.mention: Notas legales
+#
+myproject.title: Presentación del proyecto
+myproject.block1: es una organización de defensa jurídica activa, de solidaridad, de unidad y ayuda mutua entre los africanos y Afrodescendientes. Su único objetivo es coordinar y organizar la defensa y la protección de los africanos y Afrodescendientes sobre especificidades jurídicas.
+myproject.block2: Apoyar, defender, proteger los intereses y los derechos de los africanos y Afrodescendientes donde sea necesario
+myproject.block3: La OJAAD quiere ser una organización ambiciosa que reúne dentro de ella un comité de juristas y abogados eminentes capaces de intervenir con rigor y profesionalismo sobre problemáticas individuales, colectivas, económicas y más
+myproject.block4: Frente a la magnitud y a la tragedia que sufre nuestro pueblo, ahora queremos procesos pragmáticos basados en el principio de acción y eficacidad, para sensibilizar los nuestros, organizarlos, protegerlos y defenderlos al agrupar recursos humanos, jurídicos y económicos.
+myproject.block5: Optamos por la OJAAD (Organización Jurídica de los Africanos y Afrodescendientes).
+myproject.block6: El objetivo de OJAAD
+myproject.block7: También puede ayudarnos haciendo una donación.
+#
+# Autres message accueil
+#
+ojaad.home.txt0: este cuestionario
+ojaad.home.txt1: Usted está interesado, ¿quiere saber más sobre OJAAD? Gracias por tomarse unos minutos para responder
+ojaad.home.txt2: Usted es una empresa interesada, ¿quiere saber más sobre OJAAD? Gracias por tomarse unos minutos para responder
+ojaad.home.txt3: Usted está interesado, ¿quiere saber más sobre OJAAD? Gracias por dedicar unos minutos a responder este formulario.
+ojaad.home.txt4: Usted es una empresa interesada, ¿quiere saber más sobre OJAAD? Gracias por dedicar unos minutos a responder este formulario.
+#
+# Messages divers Adhesion
+#
+ojaad.txt1: Membresía en OJAAD
+ojaad.txt2: Puede apoyarnos al unirse a la OJAAD como persona natural.
+ojaad.txt3: Como empresa, puede ayudarnos con varias donaciones..
+ojaad.txt4: También puede unirse a la OJAAD como experto en su campo haciendo
+ojaad.txt5: clic aquí
+ojaad.txt6: Si quieres unirte como persona,
+ojaad.txt7: por favor, rellene el siguiente formulario:
+ojaad.txt8: Si quieres apoyarnos como empresa,
+ojaad.txt9: Para unirse al grupo de expertos OJAAD,
+ojaad.txta: Contacto
+ojaad.txtb: Síguenos
+ojaad.txtc: Gracias por unirte a la OJAAD y ayudarnos,
+ojaad.txtd: Gracias por ayudar a OJAAD en sus diversas acciones asociativas,
+ojaad.label.name: Nombre Apellido
+ojaad.label.email: E-mail
+ojaad.label.cover: Tu motivación
+ojaad.label.file: Tu currículum
+ojaad.label.pre: Aplicación de
+ojaad.label.mandatory: campos obligatorios
+# ---------------------------------------------------------------------------------------------------------------------
+# Formulaire de recrutement
+# ---------------------------------------------------------------------------------------------------------------------
+form.label1: Envía tu solicitud
+form.pholder.fname: Nombre Apellido
+form.pholder.name: Nombre
+form.pholder.lastname: Apellido
+form.pholder.email: Email
+form.pholder.phone: Teléfono
+form.pholder.select: Seleccionar
+form.msg.confirm: ¡Su membresía se ha registrado con éxito!
+form.msg.confirm1: Su aplicación se ha registrado con éxito.
+form.msg.error: Error, nos encontramos con un problema, intente nuevamente más tarde.
+form.msg.duplicate: Lo sentimos, esta dirección de correo electrónico ya está en uso.
+form.msg.error1: ¡El valor ingresado es incorrecto!
+form.msg.error2: Por favor seleccione un valor válido!
+form.msg.error3: Su carta tiene más de 500 caracteres permitidos.
+form.msg.error4: Formato de archivo incorrecto (.pdf y .doc permitida).
+form.msg.error5: Por favor describe tu motivación
+form.msg.error6: Su archivo excede 1024 kb permitido.
+form.msg.error7: Por favor ingrese un texto de menos de 250 caracteres.
+# Autres Messages adhésion
+file_msg_error: Tipo de archivo inválido (PDF y Word).
+success.add.volunteer: Su aplicación ha sido registrada con éxito Le responderemos lo antes posible.
+warning.add.volunteer: No pudimos registrar su aplicación. Por favor intente de nuevo más tarde.
+warning.duplicate.volunteer: Su correo electrónico ya ha sido utilizado para otra aplicación.
+# Formulaire adhesion - sidebar
+annonce.title: OJAAD está reclutando
+annonce.desc: Estamos buscando los siguientes campos
+poste.a: Juristas / abogados
+poste.b: Investigadores
+poste.c: Marketing / comunicación / comercial
+poste.d: Secretaría / Administrativo
+poste.e: Finanzas / Contabilidad
+poste.f: Otro
+#
+aform.title: Formulario de reclutamiento
+aform.label1: Motive su solicitud en unas pocas líneas (500 caracteres)
+aform.label2: Seleccione su CV (pdf o formato de palabra)
+aform.label3: Envía tu candidatura
+aform.pholder1: Escriba su cubierta de letras aquí ...
+aform.pholder2: Curriculum vitae (CV)
+# ---------------------------------------------------------------------------------------------------------------------
+# Formulaire demande informations particulier
+# ---------------------------------------------------------------------------------------------------------------------
+bform.label: Formulario de información
+bform.input.name: Nombre
+bform.input.lastname: Primer nombre
+bform.input.address: Dirección
+bform.input.email: Correo electrónico
+bform.input.birthdate: Fecha de nacimiento
+bform.input.phone: Teléfono
+#
+bform.input.prosituation: Situación profesional
+bform.prositu.anwser1: Buscando trabajo
+bform.prositu.anwser2: Empleado
+bform.prositu.anwser4: Estudiante
+bform.prositu.anwser5: Oficial
+bform.prositu.anwser6: independiente / independiente
+bform.prositu.anwser7: Profesión liberal
+bform.prositu.anwser8: Emprendedor
+#
+bform.input.famsituation: Situación familiar
+bform.famsitu.anwser1: Single
+bform.famsitu.anwser2: Casado
+bform.famsitu.anwser3: Varios
+bform.famsitu.anwser4: Viudo
+bform.famsitu.anwser5: Padre soltero
+#
+bform.input.nationality: Nacionalidad
+bform.input.nativecountry: País de origen
+bform.input.question1: ¿Actualmente tiene seguro legal?
+bform.input.question2: ¿Tienes un abogado?
+bform.input.question3: ¿Alguna vez has tratado con la justicia?
+bform.input.question4: Si es así, ¿encuentra un abogado fácilmente?
+bform.input.question5: ¿Cómo financió los costos legales?
+bform.input.question6: ¿Conoces personas a tu alrededor que hayan tratado con la justicia?
+bform.input.question7: ¿Encontraron fácilmente un abogado?
+bform.input.question8: ¿Han sido capaces de financiar fácilmente sus costos legales?
+bform.input.question9: ¿Cuál es su nivel de ingresos anuales (en euros)?
+bform.ques9.answer1: Mayor que 15,000
+bform.ques9.answer2: Entre 15,000 y 25,000
+bform.ques9.answer3: Entre 25,000 y 30,000
+bform.ques9.answer4: Entre 30,000 y 40,000
+bform.ques9.answer5: Más de 40,000
+bform.input.question10: ¿Cómo te sientes acerca de la justicia en general?
+bform.input.question11: ¿Cuál es su opinión sobre la situación de los africanos y Afrodescendientes?
+bform.input.adhesion: deseas unirte OJAAD
+bform.input.mensual: ¿Qué pago mensual le conviene?
+bform.input.question12: ¿Qué esperas de OJAAD?
+bform.msg.confirm: Gracias por sus respuestas, nos pondremos en contacto con usted pronto.
+bform.msg.warning: Lo sentimos, pero no pudimos guardar sus datos. Por favor intente de nuevo más tarde.
+bform.msg.duplicate: Lo sentimos, pero su correo electrónico ya ha sido utilizado.
+bform.label.submit: Validar el formulario
+#
+bform.select.choice: Seleccionar
+#
+bform.answer.yes: Sí
+bform.answer.no: No
+#
+bform.msg.error: Por favor ingrese este campo.
+bform.mail.error: Por favor ingrese una correo electrónico válida.
+#
+# Autres placeholder
+#
+bform.placeholder.address: ingrese el número de carril, carril, nombre del carril, código postal, ciudad y país.
+bform.placeholder.question5: ingrese un breve comentario de menos 255 caracteres.
+bform.placeholder.question10: Por favor, introduzca sus sentimientos sobre la justicia en menos de 255 caracteres.
+bform.placeholder.question11: Por favor, introduzca sus sentimientos sobre la situación de los africanos y Afrodescendientes en menos de 255 caracteres.
+bform.placeholder.mensual: Introduzca un importe (en euros).
+bform.placeholder.question12: Ingrese lo que espera de OJAAD en menos de 255 caracteres.
+# ---------------------------------------------------------------------------------------------------------------------
+# Formulaire demande informations entreprise
+# ---------------------------------------------------------------------------------------------------------------------
+cform.input.socialreason: Razón social
+cform.input.contactname: Nombre de contacto
+cform.input.email: E-mail
+cform.input.role: Función
+cform.input.countryoffice: País de la sede
+cform.input.phone: Teléfono
+cform.input.activity: Naturaleza de la actividad
+cform.input.turnover: Facturación
+#
+cform.title1: "< 50.000€"
+cform.title2: "≥ 50.000€ y < 150,000€"
+cform.title3: "≥ 150.000€ y < 250.000€"
+cform.title4: "≥ 250.000€ y < 500.000€"
+cform.title5: "> 500.000€"
+#
+cform.input.employees: Número de empleados / voluntarios
+cform.label.needs: Necesidad
+cform.input.legalhotline: ¿Necesita una línea directa legal?
+cform.input.legaladvice: ¿Necesita asesoramiento legal?
+cform.input.website: Sitio web
+# ---------------------------------------------------------------------------------------------------------------------
+# Formulaire de contact
+# ---------------------------------------------------------------------------------------------------------------------
+form.contact.title: Contáctenos
+form.contact.name: Nombre
+form.contact.email: Email
+form.contact.phone: Teléfono
+form.contact.subject: Sujeto
+form.contact.invite: Escribe tu mensaje aquí...
+form.contact.submit: Enviar mensaje
+form.contact.msg: Necesita información sobre nuestra asociación o para cualquier pregunta, utilice el formulario a continuación.
+# Sidebar Contact
+side.contact.address: Dirección
+# Error messages Contact
+error.name: Por favor ingrese su nombre
+error.email.a: Proporcione un correo electrónico válido
+error.email.b: Tu correo electrónico no parece ser válido
+error.subject: Por favor, dale un Asunto
+error.body: Por favor, escribe un mensaje aquí
+# Statutes of the sending of messages
+warning.send.mail: Su mensaje no pudo ser enviado. Por favor intente de nuevo más tarde.
+success.send.mail: Su mensaje ha sido enviado. Le responderemos lo antes posible.
+#
+# Status operation
+#
+status.op.title: Estado de la operación
+status.op.success: ¡Correcto!
+status.op.error: Falló!
+# ---------------------------------------------------------------------------------------------------------------------
+# Error page text
+# ---------------------------------------------------------------------------------------------------------------------
+error.text.0: Página de error
+error.text.1: Ocurrió un error
+error.text.2: Oops! Ocurrió un error
+error.text.3: El servidor devolvió
+error.text.4: Algo está roto. Envíenos un correo electrónico a support@ekdevcenter.tech y háganos saber lo que estaba haciendo cuando ocurrió este error. Lo arreglaremos lo más pronto posible. Pedimos disculpas por cualquier inconveniente causado.
+error.text.5: La página a la que intenta acceder no existe.
+error.text.6: El servidor tiene un problema !!!

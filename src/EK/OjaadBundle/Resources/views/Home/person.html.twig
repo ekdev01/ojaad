@@ -1,0 +1,155 @@
+{# src/EK/OjaadBundle/Resources/views/Home/person.html.twig #}
+{# Template fof Bundle #}
+
+{% extends "EKOjaadBundle::layout_content_a.html.twig" %}
+
+{% block body %}
+    <article class="col-md-8 maincontent">
+        <header class="page-header">
+            <h1 class="page-title"><i class="fa fa-users fa-5" aria-hidden="true"></i>{{ 'bform.label'|trans }}</h1>
+        </header>
+
+        {{ form_start(form) }}
+        <div class="h-body well form-group"><!-- well  -->
+            <div class="row">
+                <div class="col-sm-6 text-left">
+                    {{ form_row(form.name) }}
+                </div>
+                <div class="col-sm-6 text-left">
+                    {{ form_row(form.lastname) }}
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-12 text-left">
+                    {{ form_row(form.address) }}
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-8 text-left">
+                    {{ form_row(form.email) }}
+                </div>
+                <div class="row">
+                    <div class="col-sm-4 text-left">
+                        {{ form_row(form.phone) }}
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-12 text-left">
+                    {{ form_row(form.birthdate, { 'attr': {'size': '15'} }) }}
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-6 text-left">
+                    {{ form_row(form.nativecountry) }}
+                </div>
+                <div class="col-sm-6 text-left">
+                    {{ form_row(form.nationality) }}
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-6 text-left">
+                    {{ form_row(form.famsituation) }}
+                </div>
+                <div class="col-sm-6 text-left">
+                    {{ form_row(form.prosituation) }}
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-6 text-left">
+                    {{ form_row(form.question1) }}
+                </div>
+                <div class="col-sm-6 text-left">
+                    {{ form_row(form.question2) }}
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-6 text-left">
+                    {{ form_row(form.question3) }}
+                </div>
+                <div class="col-sm-6 text-left">
+                    {{ form_row(form.question4) }}
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-12 text-left">
+                    {{ form_row(form.question5) }}
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-12 text-left">
+                    {{ form_row(form.question6) }}
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-5 text-left">
+                    {{ form_row(form.question7) }}
+                </div>
+                <div class="col-sm-7 text-left">
+                    {{ form_row(form.question8) }}
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-12 text-left">
+                    {{ form_row(form.question9) }}
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-12 text-left">
+                    {{ form_row(form.question10) }}
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-12 text-left">
+                    {{ form_row(form.question11) }}
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-6 text-left">
+                    {{ form_row(form.adhesion) }}
+                </div>
+                <div class="col-sm-6 text-left">
+                    {{ form_row(form.mensual) }}
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-12 text-left">
+                    {{ form_row(form.question12) }}
+                </div>
+            </div>
+            <br>
+            {# Render CSRF token etc .#}
+            <div class="row" style="display:none">
+                {{ form_rest(form) }}
+            </div>
+            <br>
+
+            <div class="row">
+                <div class="col-sm-12 text-center g-recaptcha" data-sitekey="6LcaQT0UAAAAAGTQwl21SicdsjbLGxdjKFIbCrKH"></div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    *: {{ 'ojaad.label.mandatory'|trans }}<br />
+                    <input class="btn btn-action" type="submit" value="{{ 'bform.label.submit'|trans }}">
+                </div>
+            </div>
+        </div><!-- /well  -->
+        {{ form_end(form) }}
+    </article>
+{% endblock %}

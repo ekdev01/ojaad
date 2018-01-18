@@ -1,0 +1,31 @@
+<aside class="col-md-4 sidebar sidebar-left">
+
+    <div class="row widget">
+        <div class="col-xs-12">
+            <h4>{{ 'myproject.block6'|trans }}</h4>
+            <p>{{ 'myproject.block2'|trans }}.</p>
+        </div>
+    </div>
+    <div class="row widget">
+        <div class="col-xs-12">
+            <h4>{{ 'ojaad.home.txt3'|trans }}</h4>
+            <p><img src="{{ asset('assets/images/i10.png') }}" alt=""></p>
+        </div>
+    </div>
+    <div class="row widget">
+        <div class="col-xs-12 text-center">
+            <h4>{{ 'myproject.block7'|trans }}</h4>
+            <p class="text-center">
+                <form id="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="KBGWTU533YD3L">
+                <a href="javascript:void(0);" onclick="document.getElementById('paypal').submit();" target="_blank" class="btn btn-action btn-lg" role="button">{{ 'mymenu.don'|trans }}</a>
+                <!--
+                <input type="image" src="https://www.paypalobjects.com/fr_FR/FR/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal, le réflexe sécurité pour payer en ligne">
+                <img alt="" border="0" src="https://www.paypalobjects.com/fr_FR/i/scr/pixel.gif" width="1" height="1">
+                -->
+                </form>
+            </p>
+        </div>
+    </div>
+</aside>

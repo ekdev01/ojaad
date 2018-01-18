@@ -1,0 +1,76 @@
+<footer id="footer" class="top-space">
+
+    <div class="footer1">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-3 widget">
+                    <h3 class="widget-title">{{ 'ojaad.txta'|trans }}</h3>
+                    <div class="widget-body">
+                        <p>(+33) 649 871 524<br>
+                            <a href="mailto:contact@ojaad.org" target="_blank">contact@ojaad.org</a><br>
+                            <br>
+                            Paris, France
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-3 widget">
+                    <h3 class="widget-title">{{ 'ojaad.txtb'|trans }}</h3>
+                    <div class="widget-body">
+                        <p class="follow-me-icons">
+                            <!--<a href="https://www.facebook.com/ojaadorganisation/" target="_blank"><i class="fa fa-twitter fa-2"></i></a>-->
+                            <a href="https://www.facebook.com/ojaadorganisation/" target="_blank"><i class="fa fa-facebook fa-2"></i></a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 widget">
+                    <h3 class="widget-title">{{ 'site.sigle'|trans }}</h3>
+                    <div class="widget-body text-justify">
+                        <p>
+                            {{ 'myproject.block1'|trans }}<br /><br />
+                            <b>{{ 'myproject.block2'|trans }}</b>.<br/><br/>
+                            <b>{{ 'myproject.block3'|trans }}</b>.<br/><br />
+                            {{ 'myproject.block4'|trans }}<br /><br />
+                            {{ 'myproject.block5'|trans }}
+                        </p>
+                    </div>
+                </div>
+
+            </div> <!-- /row of widgets -->
+        </div>
+    </div>
+
+    <div class="footer2">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-6 widget">
+                    <div class="widget-body">
+                        <p class="simplenav">
+                            <a href="{{ path('ek_ojaad_homepage') }}">{{ 'mymenu.home'|trans }}</a> |
+                            <a href="{{ path('ek_ojaad_person') }}">{{ 'mymenu.part'|trans }}</a> |
+                            <a href="{{ path('ek_ojaad_company') }}">{{ 'mymenu.entr'|trans }}</a> |
+                            <a href="{{ path('ek_ojaad_membership') }}">{{ 'mymenu.job'|trans }}</a> |
+                            <a href="{{ path('ek_ojaad_contact') }}">{{ 'mymenu.cont'|trans }}</a> |
+                            <a href="{{ path('ek_ojaad_mention') }}">{{ 'mymenu.mention'|trans }}</a>
+                            <!--<b><a href="{{ path('fos_user_security_login') }}">{{ 'mymenu.adm'|trans }}</a></b>-->
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 widget">
+                    <div class="widget-body">
+                        <p class="text-right">
+                            Copyright &copy; 2017, {{ 'site.sigle'|trans }},
+                            Powered By <a href="http://www.ekdevcenter.tech/" target="_blank">EK DEV Center</a>
+                        </p>
+                    </div>
+                </div>
+
+            </div> <!-- /row of widgets -->
+        </div>
+    </div>
+
+</footer>

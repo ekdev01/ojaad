@@ -1,0 +1,64 @@
+{# src/EK/OjaadBundle/Resources/views/Home/membership.html.twig #}
+{# Template fof Bundle #}
+
+{% extends "EKOjaadBundle::layout_about.html.twig" %}
+
+{% block body %}
+<article class="col-sm-8 maincontent">
+    <header class="page-header">
+        <h1 class="page-title"><i class="fa fa-briefcase" aria-hidden="true"></i>&nbsp;{{ 'aform.title'|trans }}</h1>
+    </header>
+    <h4>{{ 'ojaad.txt9'|trans }} {{ 'ojaad.txt7'|trans }}</h4>
+
+    {{ form_start(form) }}
+    <div class="h-body well form-group">
+        <div class="row">
+            <div class="col-sm-4">
+                <label>{{ 'ojaad.label.name'|trans }} <span class="text-danger">*</span></label>
+                {{ form_widget(form.name) }}
+                <span class="text-danger">{{ form_errors(form.name) }}</span>
+            </div>
+            <div class="col-sm-8">
+                <label>{{ 'ojaad.label.email'|trans }} <span class="text-danger">*</span></label>
+                {{ form_widget(form.email) }}
+                <span class="text-danger">{{ form_errors(form.email) }}</span>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-sm-12">
+                <label>{{ 'ojaad.label.cover'|trans }} <span class="text-danger">*</span></label>
+                {{ form_widget(form.cover, { 'attr': {'rows':'10'} }, { 'attr': {'max_length':'500'} }) }}
+                <span class="text-danger">{{ form_errors(form.cover) }}</span>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-sm-12">
+                <label>{{ 'ojaad.label.file'|trans }} <span class="text-danger">*</span></label>
+                {{ form_widget(form.cvfile) }}
+                <span class="text-danger">{{ form_errors(form.cvfile) }}</span>
+            </div>
+        </div>
+        <br>
+
+        {# Render CSRF token etc .#}
+        <div class="row" style="display:none">
+            {{ form_rest(form) }}
+        </div>
+        <br>
+
+        <div class="row">
+            <div class="col-sm-12 text-center g-recaptcha" data-sitekey="6LcaQT0UAAAAAGTQwl21SicdsjbLGxdjKFIbCrKH"></div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <span class="text-danger">*</span>: champs obligatoires<br />
+                <input class="btn btn-action" type="submit" value="{{ 'form.label1'|trans }}">
+            </div>
+        </div>
+    </div>
+    {{ form_end(form) }}
+</article>
+{% endblock %}

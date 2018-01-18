@@ -1,0 +1,16 @@
+{# src/EK/OjaadBundle/Resources/views/Admin/login_success.html.twig #}
+{# Template fof Bundle #}
+
+{% extends "EKOjaadBundle::layout_admin.html.twig" %}
+
+{% block body %}
+    <br /><br /><br /><br />
+
+    <p>Bonjour,</p>
+    <p>Vous vous êtes coorectement authentifié.</p>
+
+    <p><a href="{{ path('member_home') }}">Accéder à l'espace memebre</a></p>
+    <p><a href="{{ path('admin_home') }}">Accéder à l'espace administration</a></p>
+
+
+{% endblock %}

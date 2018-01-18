@@ -1,0 +1,28 @@
+<div class="container text-justify">
+    <br> <br>
+    <h2 class="thin text-center"><i class="fa fa-gavel" aria-hidden="true"></i> <b>{{ 'myproject.title'|trans }}</b></h2>
+    <p class="text-muted">
+        <h4>
+        <p style="text-align: left">
+            {% if lang == 1 %}
+                <p><img src="{{ asset('assets/images/i11_en.png') }}" alt="" class="img-rounded pull-right" width="220">
+            {% elseif lang == 2 %}
+                <p><img src="{{ asset('assets/images/i11_es.png') }}" alt="" class="img-rounded pull-right" width="220">
+            {% elseif lang == 3 %}
+                <p><img src="{{ asset('assets/images/i11_po.png') }}" alt="" class="img-rounded pull-right" width="220">
+            {% else %}
+                <p><img src="{{ asset('assets/images/i11_fr.png') }}" alt="" class="img-rounded pull-right" width="220">
+            {% endif %}
+
+            <b>{{ 'site.sigle'|trans }}</b> {{ 'myproject.block1'|trans }}
+        </p>
+
+        <p><img src="{{ asset('assets/images/i12.png') }}" alt="" class="img-rounded pull-left" width="250">{{ 'myproject.block4'|trans }}
+            <br><br><b>{{ 'myproject.block2'|trans }}</b>.
+        <b>{{ 'myproject.block3'|trans }}</b>.</p>
+
+        <br>
+        <p>{{ 'myproject.block5'|trans }}</p>
+        </h4>
+    </p>
+</div>

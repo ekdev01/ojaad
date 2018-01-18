@@ -1,0 +1,9 @@
+services:
+    app_user.registration_listener:
+        class: EK\OjaadBundle\EventListener\RegistrationListener
+        arguments: []
+        tags:
+            - { name: kernel.event_subscriber }
+    ek_ojaad.mailer:
+            class: EK\OjaadBundle\Service\Mailer
+            arguments: ['%host_mail%', '%port_mail%', '%mail_from%', '%mail_from_pwd%']

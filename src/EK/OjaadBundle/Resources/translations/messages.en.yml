@@ -1,0 +1,226 @@
+#
+site.title: Juridical Organization of Africans and Afrodescendants
+site.sigle: JOAAD
+#
+mymenu.home: Home
+mymenu.job: Join us
+mymenu.lang: Change language
+mymenu.cont: Contact
+mymenu.part: Individual
+mymenu.entr: Company
+mymenu.adhesion: Information request
+mymenu.admin: RESERVED SPACE
+mymenu.don: MAKE A DONATION
+mymenu.adm: Reserved espace
+mymenu.mention: Legal Notice
+#
+myproject.title: Project presentation
+myproject.block1: is an organization of active legal defense, solidarity, unity and mutual assistance between Africans and Afrodescendants. Its purpose is simply to coordinate and organize the defense and the protection of Africans and Afrodescendants on juridical specificities.
+myproject.block2: Supporting, defending and protecting Africans and Afrodescendants’ interests wherever necessary
+myproject.block3: Juridical Organization of Africans and Afrodescendants is to be an ambitious organization which regroups a committee of eminent jurists and lawyers able to intervene with appropriate rigor and professionalism on individual, collective, economical, political issues, among others
+myproject.block4: To face the magnitude and tragedy from which our people are suffering, we now want pragmatic procedures, based on active and efficient policies, which aim to heighten awareness among ours, to organize, protect and defend them by pooling human, juridical and economical resources.
+myproject.block5: We Choose Juridical Organization of Africans and Afrodescendants.
+myproject.block6: The Objective of JOAAD
+myproject.block7: You can also support us by making a donation.
+#
+# Autres message accueil
+#
+ojaad.home.txt0: this questionnaire
+ojaad.home.txt1: You are interested, you want to know more about OJAAD? Thank you for taking a few minutes to answer
+ojaad.home.txt2: You are an interested company, you want to know more about OJAAD? Thank you for taking a few minutes to answer
+ojaad.home.txt3: You are interested, you want to know more about OJAAD? Thank you for taking a few minutes to answer this form.
+ojaad.home.txt4: You are an interested company, you want to know more about OJAAD? Thank you for taking a few minutes to answer this form.
+#
+# Messages divers Adhesion
+#
+ojaad.txt1: Membership in JOAAD
+ojaad.txt2: You can support us by joining JOAAD as a natural person.
+ojaad.txt3: As a company, you can support us with various donations.
+ojaad.txt4: You can also join JOAAD as an expert in your field by
+ojaad.txt5: clicking here
+ojaad.txt6: If you want to join as a natural person,
+ojaad.txt7: please fill out the form below:
+ojaad.txt8: If you want to support us as a company,
+ojaad.txt9: Thank you for joining JOAAD expert group,
+ojaad.txta: Contact
+ojaad.txtb: Follow me
+ojaad.txtc: Thank you for joining JOAAD and helping us,
+ojaad.txtd: Thank you for helping JOAAD in its various associative actions,
+ojaad.label.name: Firstname name
+ojaad.label.email: E-mail
+ojaad.label.cover: Your motivation
+ojaad.label.file: Your CV
+ojaad.label.pre: Application of
+ojaad.label.mandatory: required fields
+# ---------------------------------------------------------------------------------------------------------------------
+# Formulaire recrutement
+# ---------------------------------------------------------------------------------------------------------------------
+form.label1: Submit your application
+form.pholder.fname: Firstname Name
+form.pholder.name: Name
+form.pholder.lastname: LastName
+form.pholder.email: E-mail
+form.pholder.phone: Phone
+form.pholder.select: Please select
+form.msg.confirm: Your membership has been successfully registered.
+form.msg.confirm1: Your application has been successfully registered.
+form.msg.error: Error, we encounter a problem, please try again later.
+form.msg.duplicate: Sorry, this email address is already in use.
+form.msg.error1: The value entered is incorrect!
+form.msg.error2: Please select a valid value!
+form.msg.error3: Your letter is more than 500 characters allowed.
+form.msg.error4: Incorrect file format (.pdf and .doc allowed).
+form.msg.error5: Please describe your motivation
+form.msg.error6: Your file exceeds 1024 kb allowed.
+form.msg.error7: Please enter a text of less than 250 characters.
+# Autres Messages adhésion
+file_msg_error: Invalid file type (PDF and Word).
+success.add.volunteer: Your application has been successfully registered We will answer you as soon as possible.
+warning.add.volunteer: We could not register your application. Please try again later.
+warning.duplicate.volunteer: Your email has already been used for another application.
+# Formulaire adhesion - sidebar
+annonce.title: JOAAD recruits
+annonce.desc: We are looking for the following fields
+poste.a: Jurists / lawyers
+poste.b: Investigators
+poste.c: Marketing / communication / commercial
+poste.d: Secretariat / Administrative
+poste.e: Finance / Accounting
+poste.f: Other
+#
+aform.title: Recruitment form
+aform.label1: Please motivate your application in a few lines (500 characters)
+aform.label2: Please select your CV (pdf or word format)
+aform.label3: Send your candidacy
+aform.pholder1: Type your cover letter here ...
+aform.pholder2: Curriculum vitae (CV)
+# ---------------------------------------------------------------------------------------------------------------------
+# Formulaire demande informations particulier
+# ---------------------------------------------------------------------------------------------------------------------
+bform.label: Information form
+bform.input.name: Name
+bform.input.lastname: First Name
+bform.input.address: Address
+bform.input.email: E-mail
+bform.input.birthdate: Date of birth
+bform.input.phone: Phone
+#
+bform.input.prosituation: Professional situation
+bform.prositu.anwser1: Looking for a job
+bform.prositu.anwser2: Employee
+bform.prositu.anwser4: Student
+bform.prositu.anwser5: Official
+bform.prositu.anwser6: Independent / Freelance
+bform.prositu.anwser7: Liberal Profession
+bform.prositu.anwser8: Entrepreneur
+#
+bform.input.famsituation: Family situation
+bform.famsitu.anwser1: Single
+bform.famsitu.anwser2: Married
+bform.famsitu.anwser3: Various
+bform.famsitu.anwser4: Widowed
+bform.famsitu.anwser5: Single parent
+#
+bform.input.nationality: Nationality
+bform.input.nativecountry: Country of origin
+bform.input.question1: Do you currently have legal insurance?
+bform.input.question2: Do you have a lawyer?
+bform.input.question3: Have you ever dealt with justice?
+bform.input.question4: If yes did you find a lawyer easily?
+bform.input.question5: How did you finance the legal costs?
+bform.input.question6: Do you know of people around you who have dealt with justice?
+bform.input.question7: Did they easily find a lawyer?
+bform.input.question8: Have they been able to easily finance their legal costs?
+bform.input.question9: What is your annual income bracket (in euros)?
+bform.ques9.answer1: Greater than 15,000
+bform.ques9.answer2: Between 15,000 and 25,000
+bform.ques9.answer3: Between 25,000 and 30,000
+bform.ques9.answer4: Between 30,000 and 40,000
+bform.ques9.answer5: Over 40,000
+bform.input.question10: How do you feel about justice in general?
+bform.input.question11: What is your feeling about the situation of Africans and Afrodescendants?
+bform.input.adhesion: You wish to join JOAAD
+bform.input.mensual: Which monthly payment would suit you?
+bform.input.question12: What do you expect from JOAAD?
+bform.msg.confirm: Thank you for your answers, we will contact you soon.
+bform.msg.warning: Sorry, but we could not save your data. Please try again later.
+bform.msg.duplicate: Sorry, but your email has already been used.
+bform.label.submit: Validate the form
+#
+bform.select.choice: Select
+#
+bform.answer.yes: Yes
+bform.answer.no: No
+#
+bform.msg.error: Please enter this field.
+bform.mail.error: Please enter a correct email address.
+#
+# Autres placeholder
+#
+bform.placeholder.address: Please enter lane number, lane, lane name, zip code, city and country.
+bform.placeholder.question5: Please enter a short comment of minus 255 characters.
+bform.placeholder.question10: Please enter your feelings about justice in less than 255 characters.
+bform.placeholder.question11: Please enter your feelings about the situation of Africans and Afrodescendants in less than 255 characters.
+bform.placeholder.mensual: Please enter an amount (in euros).
+bform.placeholder.question12: Please enter what you expect from JOAAD in less than 255 characters.
+# ---------------------------------------------------------------------------------------------------------------------
+# Formulaire demande informations entreprise
+# ---------------------------------------------------------------------------------------------------------------------
+cform.input.socialreason: Social Reason
+cform.input.contactname: Contact Name
+cform.input.email: E-mail
+cform.input.role: Role
+cform.input.countryoffice: Headquarters Country
+cform.input.phone: Phone
+cform.input.activity: Nature of the activity
+cform.input.turnover: Turnover
+#
+cform.title1: "< 50.000€"
+cform.title2: "≥ 50.000€ and < 150,000€"
+cform.title3: "≥ 150.000€ and < 250.000€"
+cform.title4: "≥ 250.000€ and < 500.000€"
+cform.title5: "> 500.000€"
+#
+cform.input.employees: Number of employees / volunteers
+cform.label.needs: Necessity
+cform.input.legalhotline: Need a Legal Hotline?
+cform.input.legaladvice: Need legal advice?
+cform.input.website: Website
+# ---------------------------------------------------------------------------------------------------------------------
+# Formulaire de contact
+# ---------------------------------------------------------------------------------------------------------------------
+form.contact.title: Contact us
+form.contact.name: Name
+form.contact.email: Email
+form.contact.phone: Phone
+form.contact.subject: Subject
+form.contact.invite: Type your message here...
+form.contact.submit: Send message
+form.contact.msg: Need information about our association or for any question, please use the form below.
+# Sidebar Contact
+side.contact.address: Address
+# Error messages Contact
+error.name: Please provide your name
+error.email.a: Please provide a valid email
+error.email.b: Your email doesn't seems to be valid
+error.subject: Please give a Subject
+error.body: Please provide a message here
+# Statutes of the sending of messages
+warning.send.mail: Your message could not be sent. Please retry later.
+success.send.mail: Your message has been sent. We will answer you as soon as possible.
+#
+# Status operation
+#
+status.op.title: Status of the operation
+status.op.success: Successful!
+status.op.error: Failed!
+# ---------------------------------------------------------------------------------------------------------------------
+# Error page text
+# ---------------------------------------------------------------------------------------------------------------------
+error.text.0: Error page
+error.text.1: An Error Occurred
+error.text.2: Oops! An Error Occurred
+error.text.3: The server returned a
+error.text.4: Something is broken. Please e-mail us at support@ekdevcenter.tech and let us know what you were doing when this error occurred. We will fix it as soon as possible. Sorry for any inconvenience caused.
+error.text.5: The page you are trying to access does not exist.
+error.text.6: The server has a problem !!!

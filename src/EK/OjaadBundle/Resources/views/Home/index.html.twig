@@ -1,0 +1,39 @@
+{# src/EK/OjaadBundle/Resources/views/Home/index.html.twig #}
+{# Template fof Bundle #}
+
+{% extends "EKOjaadBundle::layout.html.twig" %}
+
+{% block body %}
+
+    <!-- Intro -->
+    {% include '::presentation.html.twig' %}
+    <!-- /Intro-->
+
+    <!-- Highlights - jumbotron -->
+    <div class="jumbotron top-space">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 highlight text-center">
+                    <div class="h-caption">
+                        <h4>
+                            <i class="fa fa-users fa-5" aria-hidden="true"></i>
+                            {{ 'ojaad.home.txt1'|trans }}<br />
+                            <a href="{{ path('ek_ojaad_person') }}">{{ 'ojaad.home.txt0'|trans }}</a>.
+                        </h4>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-6 highlight text-center">
+                    <div class="h-caption text-center">
+                        <h4>
+                            <i class="fa fa-building-o" aria-hidden="true"></i>
+                            {{ 'ojaad.home.txt2'|trans }}<br />
+                            <a href="{{ path('ek_ojaad_company') }}">{{ 'ojaad.home.txt0'|trans }}</a>.
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- /Highlights -->
+{% endblock %}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html xmlns:og="http://ogp.me/ns#" lang="{{ lang }}">
+<head>
+    <meta charset="utf-8" />
+    <!-- Social network tagging -->
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Ojaad.org: OJAAD - Organisation Juridique des Africains et Afrodescendants"/>
+    <meta property="og:url" content="http://www.ojaad.org/"/>
+    <meta property="og:image" content="http://www.ojaad.org/assets/images/lnoir.png"/>
+
+    <meta name="viewport"    content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ 'site.sigle'|trans }} - {{ 'site.title'|trans }}">
+    <meta name="author"      content="EK DEV Center">
+
+    <title>{{ 'site.sigle'|trans }} - {{ 'site.title'|trans }}</title>
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/font-awesome.min.css') }}">
+
+    <!-- Custom styles for our template -->
+    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap-theme.css') }}" media="screen" >
+    <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}">
+
+    <!-- Bootstrap Form Helpers -->
+    <link href="{{ asset('bootstrapformhelpers/dist/css/bootstrap-formhelpers.min.css') }}" rel="stylesheet" media="screen">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111879645-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-111879645-1');
+    </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="{{ asset('assets/js/html5shiv.js') }}"></script>
+    <script src="{{ asset('assets/js/respond.min.js') }}"></script>
+    <![endif]-->
+
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+</head>
+
+<body class="home">
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '828565833997689',
+      cookie     : true,
+      xfbml      : true,
+      version    : 'v2.11'
+    });
+      
+    FB.AppEvents.logPageView();   
+      
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "https://connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+
+  function onButtonClick() {
+  // Add this to a button's onclick handler
+  FB.AppEvents.logEvent("sentFriendRequest");
+}
+</script>
+<!-- Fixed navbar -->
+{% include '::navbar.html.twig' %}
+<!-- /.navbar -->
+
+<!-- Header -->
+{% include '::header.html.twig' %}
+<!-- /Header -->
+
+<!-- container -->
+{% block body %}
+{% endblock %}
+<!-- /container -->
+
+<!-- Footer -->
+{% include '::footer.html.twig' %}
+<!-- /Footer -->
+
+<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="{{ asset('assets/js/headroom.min.js') }}"></script>
+<script src="{{ asset('assets/js/jQuery.headroom.min.js') }}"></script>
+<script src="{{ asset('assets/js/template.js') }}"></script>
+
+<!-- Bootstrap Form Helpers -->
+<script src="{{ asset('bootstrapformhelpers/dist/js/bootstrap-formhelpers.min.js') }}"></script>
+
+<script type="text/javascript">
+    function fdon() {
+        document.getElementById("paypal").onsubmit();
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+ek_ojaad_homepage:
+    path:     /{_locale}/
+    defaults: { _controller: EKOjaadBundle:Home:index }
+    requirements:
+        _locale: en|es|fr
+
+ek_ojaad_membership:
+    path:     /{_locale}/membership
+    defaults: { _controller: EKOjaadBundle:Home:membership }
+    requirements:
+        _locale: en|es|fr
+
+ek_ojaad_person:
+    path:     /{_locale}/person
+    defaults: { _controller: EKOjaadBundle:Home:person }
+    requirements:
+        _locale: en|es|fr
+
+ek_ojaad_company:
+    path:     /{_locale}/company
+    defaults: { _controller: EKOjaadBundle:Home:company }
+    requirements:
+        _locale: en|es|fr
+
+ek_ojaad_contact:
+    path:     /{_locale}/contact
+    defaults: { _controller: EKOjaadBundle:Home:contact }
+    requirements:
+        _locale: en|es|fr
+
+ek_ojaad_mention:
+    path:     /{_locale}/mention
+    defaults: { _controller: EKOjaadBundle:Home:mention }
+    requirements:
+        _locale: en|es|fr
+
+ek_ojaad_message:
+    path:     /{_locale}/message
+    defaults: { _controller: EKOjaadBundle:Home:message }
+    requirements:
+        _locale: en|es|fr
+
+ek_ojaad_admin_home:
+    path:     /admin/
+    defaults: { _controller: EKOjaadBundle:Admin:index }
+
+ek_ojaad_admin_member_home:
+    path:     /member/
+    defaults: { _controller: EKOjaadBundle:Admin:member }

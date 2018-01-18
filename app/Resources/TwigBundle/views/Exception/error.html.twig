@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"    content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ 'site.sigle'|trans }} - {{ 'site.title'|trans }}">
+    <meta name="author"      content="EK DEV Center">
+
+    <title>{{ 'error.text.1'|trans }}: {{ status_text }}</title>
+    <link rel="shortcut icon" href="assets/images/gt_favicon.png">
+
+    <link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/font-awesome.min.css') }}">
+
+    <!-- Custom styles for our template -->
+    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap-theme.css') }}" media="screen" >
+    <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}">
+
+    <!-- Bootstrap Form Helpers -->
+    <link href="{{ asset('bootstrapformhelpers/dist/css/bootstrap-formhelpers.min.css') }}" rel="stylesheet" media="screen">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="{{ asset('assets/js/html5shiv.js') }}"></script>
+    <script src="{{ asset('assets/js/respond.min.js') }}"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<!-- Fixed navbar -->
+<div class="navbar navbar-inverse navbar-fixed-top headroom" >
+    <div class="container">
+        <div class="navbar-header">
+            <!-- Button for smallest screens -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+            <a class="navbar-brand" href="{{ path('ek_ojaad_homepage') }}"><img src="{{ asset('assets/images/llogo.png') }}" alt="{{ 'site.sigle'|trans }}"></a>
+        </div>
+
+        <div class="navbar-collapse collapse">
+
+        </div>
+        <!--/.nav-collapse -->
+    </div>
+</div>
+<!-- /.navbar -->
+
+<header id="head" class="secondary"></header>
+
+<!-- container -->
+<div class="container">
+
+    <div class="row">
+        <!-- Content -->
+        <article class="col-xs-12 maincontent">
+            <header class="page-header">
+                <h1 class="page-title">{{ 'error.text.0'|trans }}</h1>
+            </header>
+
+            <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+
+                <h1>{{ 'error.text.2'|trans }}</h1>
+                <h4>{{ 'error.text.3'|trans }}The server returned a "{{ status_code }} {{ status_text }}".</h4>
+
+                <h2>{{ 'error.text.4'|trans }}</h2>
+
+            </div>
+        </article>
+        <!-- /Content -->
+    </div>
+</div>
+<!-- /container -->
+
+<!-- Footer -->
+<footer id="footer" class="top-space">
+
+    <div class="footer1">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-3 widget">
+                    <h3 class="widget-title">{{ 'ojaad.txta'|trans }}</h3>
+                    <div class="widget-body">
+                        <p>+33 6 84 34 49 71<br>
+                            <a href="mailto:#">contact@ojaad.org</a><br>
+                            <br>
+                            Paris, France
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-3 widget">
+                    <h3 class="widget-title">{{ 'ojaad.txtb'|trans }}</h3>
+                    <div class="widget-body">
+                        <p class="follow-me-icons">
+                            <a href=""><i class="fa fa-twitter fa-2"></i></a>
+                            <a href=""><i class="fa fa-facebook fa-2"></i></a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 widget">
+                    <h3 class="widget-title">{{ 'site.sigle'|trans }}</h3>
+                    <div class="widget-body text-justify">
+                        <p>
+                            {{ 'myproject.block1'|trans }}<br /><br />
+                            <b>{{ 'myproject.block2'|trans }}</b>.<br/><br/>
+                            <b>{{ 'myproject.block3'|trans }}</b>.<br/><br />
+                            {{ 'myproject.block4'|trans }}<br /><br />
+                            {{ 'myproject.block5'|trans }}
+                        </p>
+                    </div>
+                </div>
+
+            </div> <!-- /row of widgets -->
+        </div>
+    </div>
+
+    <div class="footer2">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-6 widget">
+                    <div class="widget-body">
+                        <p class="simplenav">
+                            <a href="{{ path('ek_ojaad_homepage') }}">{{ 'mymenu.home'|trans }}</a> |
+                            <a href="{{ path('ek_ojaad_person') }}">{{ 'mymenu.part'|trans }}</a> |
+                            <a href="{{ path('ek_ojaad_company') }}">{{ 'mymenu.entr'|trans }}</a> |
+                            <a href="{{ path('ek_ojaad_membership') }}">{{ 'mymenu.job'|trans }}</a> |
+                            <a href="{{ path('ek_ojaad_contact') }}">{{ 'mymenu.cont'|trans }}</a> |
+                            <a href="{{ path('ek_ojaad_mention') }}">{{ 'mymenu.mention'|trans }}</a>
+                            <!--<b><a href="{{ path('fos_user_security_login') }}">{{ 'mymenu.adm'|trans }}</a></b>-->
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 widget">
+                    <div class="widget-body">
+                        <p class="text-right">
+                            Copyright &copy; 2017, {{ 'site.sigle'|trans }},
+                            Powered By <a href="http://www.ekdevcenter.tech/" target="_blank">EK DEV Center</a>
+                        </p>
+                    </div>
+                </div>
+
+            </div> <!-- /row of widgets -->
+        </div>
+    </div>
+
+</footer>
+<!-- /Footer -->
+
+<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="assets/js/headroom.min.js"></script>
+<script src="assets/js/jQuery.headroom.min.js"></script>
+<script src="assets/js/template.js"></script>
+
+<!-- Bootstrap Form Helpers -->
+<script src="{{ asset('bootstrapformhelpers/dist/js/bootstrap-formhelpers.min.js') }}"></script>
+</body>
+</html>

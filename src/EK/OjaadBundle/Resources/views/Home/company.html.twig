@@ -1,0 +1,99 @@
+{# src/EK/OjaadBundle/Resources/views/Home/company.html.twig #}
+{# Template fof Bundle #}
+
+{% extends "EKOjaadBundle::layout_content_b.html.twig" %}
+
+{% block body %}
+    <article class="col-md-8 maincontent">
+        <header class="page-header">
+            <h1 class="page-title"><i class="fa fa-building-o" aria-hidden="true"></i>{{ 'bform.label'|trans }}</h1>
+        </header>
+
+        {{ form_start(form) }}
+        <div class="h-body well form-group"><!-- well  -->
+            <div class="row">
+                <div class="col-sm-6">
+                    {{ form_row(form.socialreason) }}
+                    <span class="text-danger">{{ form_errors(form.socialreason) }}</span>
+                </div>
+                <div class="col-sm-6">
+                    {{ form_row(form.activity) }}
+                    <span class="text-danger">{{ form_errors(form.activity) }}</span>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-6">
+                    {{ form_row(form.contactname) }}
+                    <span class="text-danger">{{ form_errors(form.contactname) }}</span>
+                </div>
+                <div class="col-sm-6">
+                    {{ form_row(form.role) }}
+                    <span class="text-danger">{{ form_errors(form.role) }}</span>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-6">
+                    {{ form_row(form.email) }}
+                    <span class="text-danger">{{ form_errors(form.email) }}</span>
+                </div>
+                <div class="col-sm-6">
+                    {{ form_row(form.phone) }}
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-12">
+                    {{ form_row(form.countryoffice) }}
+                    <span class="text-danger">{{ form_errors(form.countryoffice) }}</span>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-6">
+                    {{ form_row(form.turnover) }}
+                    <span class="text-danger">{{ form_errors(form.turnover) }}</span>
+                </div>
+                <div class="col-sm-6">
+                    {{ form_row(form.employees) }}
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-sm-6">
+                    {{ form_row(form.legalhotline) }}
+                    <span class="text-danger">{{ form_errors(form.legalhotline) }}</span>
+                </div>
+                <div class="col-sm-6">
+                    {{ form_row(form.legaladvice) }}
+                    <span class="text-danger">{{ form_errors(form.legaladvice) }}</span>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-12">
+                    {{ form_row(form.website) }}
+                </div>
+            </div>
+            <br>
+            {# Render CSRF token etc .#}
+            <div class="row" style="display:none">
+                {{ form_rest(form) }}
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-12 text-center g-recaptcha" data-sitekey="6LcaQT0UAAAAAGTQwl21SicdsjbLGxdjKFIbCrKH"></div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    *: {{ 'ojaad.label.mandatory'|trans }}<br />
+                    <input class="btn btn-action" type="submit" value="{{ 'bform.label.submit'|trans }}">
+                </div>
+            </div>
+        </div><!-- /wel  -->
+        {{ form_end(form) }}
+    </article>
+{% endblock %}

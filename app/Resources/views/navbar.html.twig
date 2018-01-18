@@ -1,0 +1,103 @@
+<div class="navbar navbar-inverse navbar-fixed-top headroom" >
+    <div class="container">
+        <div class="navbar-header">
+            <!-- Button for smallest screens -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+            <a class="navbar-brand" href="{{ path('ek_ojaad_homepage') }}">
+              <img src="{{ asset('assets/images/logo_st_ok.png') }}" class="speimg"  alt="{{ 'site.sigle'|trans }}" style="vertical-align:middle;">
+            </a>
+        </div>
+
+        <div class="navbar-collapse collapse">
+
+            <!-- active = {{ active }} <br /> -->
+
+            <ul class="nav navbar-nav pull-right">
+
+                <!-- Menu Accueil -->
+                {% if active == 1 %}
+                    <li class="active"><a href="#">{{ 'mymenu.home'|trans }}</a></li>
+                {% else %}
+                    <li><a href="{{ path('ek_ojaad_homepage') }}">{{ 'mymenu.home'|trans }}</a></li>
+                {% endif %}
+                <!-- /Menu Accueil -->
+
+                {% if active == 2 or active == 3 %}
+                    <li class="active dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ 'mymenu.adhesion'|trans }}<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="{{ path('ek_ojaad_person') }}">{{ 'mymenu.part'|trans }}</a></li>
+                            <li><a href="{{ path('ek_ojaad_company') }}">{{ 'mymenu.entr'|trans }}</a></li>
+                        </ul>
+                    </li>
+                {% else %}
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ 'mymenu.adhesion'|trans }}<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="{{ path('ek_ojaad_person') }}">{{ 'mymenu.part'|trans }}</a></li>
+                            <li><a href="{{ path('ek_ojaad_company') }}">{{ 'mymenu.entr'|trans }}</a></li>
+                        </ul>
+                    </li>
+                {% endif %}
+
+                <!-- Menu Rejoignez-nous -->
+                {% if active == 4 %}
+                    <li class="active"><a href="#">{{ 'mymenu.job'|trans }}</a></li>
+                {% else %}
+                    <li>
+                        <li><a href="{{ path('ek_ojaad_membership') }}">{{ 'mymenu.job'|trans }}</a><li>
+                    </li>
+                {% endif %}
+                <!-- /Menu Rejoignez-nous -->
+
+                <!-- Menu Contact -->
+                {% if active == 5 %}
+                    <li class="active"><a href="{{ path('ek_ojaad_contact') }}">{{ 'mymenu.cont'|trans }}</a></li>
+                {% else %}
+                    <li><a href="{{ path('ek_ojaad_contact') }}">{{ 'mymenu.cont'|trans }}</a></li>
+                {% endif %}
+                <!-- /Menu Contact -->
+
+
+                <!-- Menu Langue -->
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        {{ 'mymenu.lang'|trans }}<b class="caret"></b>&nbsp;&nbsp;&nbsp;&nbsp;
+                        {% if lang == 1 %}
+                            <span class="bfh-languages" data-language="en_GB" data-flags="true"></span>
+                        {% elseif lang == 2 %}
+                            <span class="bfh-languages" data-language="es_ES" data-flags="true"></span>
+                        {% else %}
+                            <span class="bfh-languages" data-language="fr_FR" data-flags="true"></span>
+                        {% endif %}
+                    </a>
+                    <ul class="dropdown-menu">
+                        {% if (app.request.getLocale()) == 'en' %}
+                            <li><a href="{{ path(app.request.get('_route'), app.request.get('_route_params')|merge({'_locale': 'fr'})) }}"><span class="bfh-languages" data-language="fr_FR" data-flags="true"></span></a></li>
+                            <li><a href="#"><span class="bfh-languages" data-language="en_GB" data-flags="true"></span></a></li>
+                            <li><a href="{{ path(app.request.get('_route'), app.request.get('_route_params')|merge({'_locale': 'es'})) }}"><span class="bfh-languages" data-language="es_ES" data-flags="true"></span></a></li>
+                        {% elseif (app.request.getLocale()) == 'es' %}
+                            <li><a href="{{ path(app.request.get('_route'), app.request.get('_route_params')|merge({'_locale': 'fr'})) }}"><span class="bfh-languages" data-language="fr_FR" data-flags="true"></span></a></li>
+                            <li><a href="{{ path(app.request.get('_route'), app.request.get('_route_params')|merge({'_locale': 'en'})) }}"><span class="bfh-languages" data-language="en_GB" data-flags="true"></span></a></li>
+                            <li><a href="#"><span class="bfh-languages" data-language="es_ES" data-flags="true"></span></a></li>
+                        {% else %}
+                            <li><a href="#"><span class="bfh-languages" data-language="fr_FR" data-flags="true"></span></a></li>
+                            <li><a href="{{ path(app.request.get('_route'), app.request.get('_route_params')|merge({'_locale': 'en'})) }}"><span class="bfh-languages" data-language="en_GB" data-flags="true"></span></a></li>
+                            <li><a href="{{ path(app.request.get('_route'), app.request.get('_route_params')|merge({'_locale': 'es'})) }}"><span class="bfh-languages" data-language="es_ES" data-flags="true"></span></a></li>
+                        {% endif %}
+                    </ul>
+                </li>
+                <!-- /Menu Langue -->
+
+                <!-- Menu Espace reservé
+                <li class="active"><a class="btn" href="{{ path('fos_user_security_login') }}">{{ 'mymenu.admin'|trans }}</a></li>
+                 /Menu Espace reservé -->
+
+                <!-- Bouton faire un don
+                <li class="active"><a class="btn" href="{{ path('fos_user_security_login') }}">{{ 'mymenu.don'|trans }}</a></li>
+                /Bouton faire un don -->
+            </ul>
+        </div>
+        <!--/.nav-collapse -->
+    </div>
+</div>
