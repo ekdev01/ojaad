@@ -257,7 +257,7 @@ class PersonType extends AbstractType {
 			),*/
 			))
 			->add('question9', ChoiceType::class , array(
-				'label'                              => $trans->trans('bform.input.question9').'*',
+				'label'                              => $trans->trans('bform.input.question9'),
 				'choices'                            => array(
 					$trans->trans('bform.select.choice')=> '',
 					$trans->trans('bform.ques9.answer1')=> $trans->trans('bform.ques9.answer1'),
@@ -269,11 +269,12 @@ class PersonType extends AbstractType {
 				'attr'         => array(
 					'placeholder' => $trans->trans('bform.input.question9'),
 				),
-				'constraints'                 => array(
-					new NotBlank(array("message" => $trans->trans('bform.msg.error'))),
-				),
+				/*'constraints'                 => array(
+				new NotBlank(array("message" => $trans->trans('bform.msg.error'))),
+				),*/
+				'required' => false,
 			))
-		->add('question10', TextareaType::class , array(
+			->add('question10', TextareaType::class , array(
 				'label'        => $trans->trans('bform.input.question10').'*',
 				'attr'         => array(
 					'placeholder' => $trans->trans('bform.placeholder.question10'),

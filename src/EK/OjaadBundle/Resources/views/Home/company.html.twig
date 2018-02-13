@@ -78,6 +78,11 @@
                 </div>
             </div>
             <br>
+            <div class="row">
+                <div class="col-sm-12 text-left">
+                    {{ form_row(form.question) }}
+                </div>
+            </div>
             {# Render CSRF token etc .#}
             <div class="row" style="display:none">
                 {{ form_rest(form) }}

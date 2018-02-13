@@ -170,6 +170,7 @@ class HomeController extends Controller {
 				$c->setLegalhotline($form->get('legalhotline')->getData());
 				$c->setLegaladvice($form->get('legaladvice')->getData());
 				$c->setWebsite($form->get('website')->getData());
+				$c->setQuestion($form->get('question')->getData());
 
 				// Update BDD
 				$bddStatus = $this->addCompany($c);
@@ -362,8 +363,8 @@ class HomeController extends Controller {
 
 			$fData = $form->getData();
 
-			$user_ip  = $this->get_ip();
-			$response = $_POST['g-recaptcha-response'];
+			$user_ip    = $this->get_ip();
+			$response   = $_POST['g-recaptcha-response'];
 			$secret     = $this->container->getParameter('google_recaptcha_secret');
 			$bRecaptcha = $this->isRecaptchaValid($response, $secret, $user_ip);
 
